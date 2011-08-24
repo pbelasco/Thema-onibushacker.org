@@ -10,16 +10,16 @@
 
 // Adds a home link to your menu
 // http://codex.wordpress.org/Template_Tags/wp_page_menu
-//function childtheme_menu_args($args) {
-//    $args = array(
-//        'show_home' => 'Home',
-//        'sort_column' => 'menu_order',
-//        'menu_class' => 'menu',
-//        'echo' => true
-//    );
-//	return $args;
-//}
-//add_filter('wp_page_menu_args','childtheme_menu_args');
+function childtheme_menu_args($args) {
+   $args = array(
+       'show_home' => 'Início',
+       'sort_column' => 'menu_order',
+       'menu_class' => 'menu',
+       'echo' => true
+   );
+	return $args;
+}
+add_filter('wp_page_menu_args','childtheme_menu_args');
 
 // Unleash the power of Thematic's dynamic classes
 // 
