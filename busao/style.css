@@ -33,7 +33,8 @@ Thematic is © Ian Stewart http://themeshaper.com/
 
 #header {
   height: 230px;
-  background: url("http://www.onibushacker.org/header.jpg") no-repeat 0 0 ; 
+  background: url("/wp-content/themes/busao/images/header.jpg") no-repeat 0 0 ; 
+/*"http://www.onibushacker.org/header.jpg"*/
 }
 #blog-title {display:none}
 #blog-description {display:none}
