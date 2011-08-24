@@ -6,12 +6,12 @@
 $themeData = get_theme_data(TEMPLATEPATH . '/style.css');
 $thm_version = trim($themeData['Version']);
 if(!$thm_version)
-    $thm_version = "unknown";
+	$thm_version = "unknown";
 
 $ct=get_theme_data(STYLESHEETPATH . '/style.css');
 $templateversion = trim($ct['Version']);
 if(!$templateversion)
-    $templateversion = "unknown";
+	$templateversion = "unknown";
 
 // set theme constants
 define('THEMENAME', $themeData['Title']);
@@ -73,7 +73,7 @@ if (!(THEMATIC_COMPATIBLE_FEEDLINKS)) {
 // Check for WordPress 2.9 add_theme_support()
 if ( apply_filters( 'thematic_post_thumbs', TRUE) ) {
 	if ( function_exists( 'add_theme_support' ) )
-	add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'post-thumbnails' );
 }
 
 // Load jQuery
@@ -99,7 +99,7 @@ require_once(THEMELIB . '/extensions/content-extensions.php');
 
 // Load custom Comments filters
 require_once(THEMELIB . '/extensions/comments-extensions.php');
- 
+
 // Load custom discussion filters
 require_once(THEMELIB . '/extensions/discussion-extensions.php');
 
@@ -133,7 +133,7 @@ add_filter( 'archive_meta', 'wpautop' );
 // Remove the WordPress Generator - via http://blog.ftwr.co.uk/archives/2007/10/06/improving-the-wordpress-generator/
 function thematic_remove_generators() { return ''; }
 if (apply_filters('thematic_hide_generators', TRUE)) {  
-    add_filter('the_generator','thematic_remove_generators');
+	add_filter('the_generator','thematic_remove_generators');
 }
 
 // Translate, if applicable

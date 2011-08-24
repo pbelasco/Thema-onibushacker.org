@@ -446,9 +446,7 @@ function thematic_header() {
 	    }
 	} else {
 	    function thematic_blogtitle() { ?>
-	    		
 	    		<div id="blog-title"><span><a href="<?php bloginfo('url') ?>/" title="<?php bloginfo('name') ?>" rel="home"><?php bloginfo('name') ?></a></span></div>
-	    		
 	    <?php }
 	    add_action('thematic_header','thematic_blogtitle',3);
 	}
